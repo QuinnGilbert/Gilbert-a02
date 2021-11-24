@@ -16,9 +16,9 @@ public class Solution06 {
         //input retirement age
         int retirement = in.nextInt();
         //get current year
-        int current_year = Calendar.getInstance().get(Calendar.YEAR);
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         //print currentYear+retirementAge-currentAge
         System.out.println("You have "+(retirement-age)+" years left to retire");
-        System.out.println("It's "+current_year+", so you can retire in "+(current_year+retirement-age));
+        System.out.println("It's "+currentYear+", so you can retire in "+(currentYear+retirement-age));
     }
 }

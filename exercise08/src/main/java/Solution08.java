@@ -15,8 +15,8 @@ public class Solution08 {
         int slices = in.nextInt();
         //calculate and print total
         int total = slices*pizzas;
-        System.out.printf("%d people with %d pizzas (%d slices)\n",people,pizzas,total);
-        System.out.printf("Each person gets %d slices\n",total/people);
-        System.out.printf("There are %d slices left over\n", total%people);
+        System.out.printf("%d people with %d pizzas (%d slices)%n",people,pizzas,total);
+        System.out.printf("Each person gets %d slices%n",total/people);
+        System.out.printf("There are %d slices left over%n", total%people);
     }
 }

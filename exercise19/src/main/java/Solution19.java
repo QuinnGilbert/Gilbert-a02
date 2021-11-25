@@ -8,9 +8,9 @@ public class Solution19 {
         //prompt and input weight and height
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your weight: ");
-        double weight = in.nextDouble();
+        double weight = getNumeric(in);
         System.out.print("Enter your height: ");
-        double height = in.nextDouble();
+        double height = getNumeric(in);
         //calculate and print BMI (weight/(height*height))*703
         double bmi = (weight/(height*height))*703;
         System.out.println("Your BMI is "+bmi);
@@ -21,6 +21,16 @@ public class Solution19 {
             System.out.println("You are a healthy weight");
         }else{
             System.out.println("You are overweight");
+        }
+    }
+    static double getNumeric(Scanner in){
+        while(true){
+            try{
+                String next = in.next();
+                return Double.parseDouble(next);
+            }catch (Exception e){
+                System.out.print("You must enter a number: ");
+            }
         }
     }
 }
